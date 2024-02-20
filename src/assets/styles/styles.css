@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,900;1,300&display=swap");
 
 html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
   margin: 0;
 }
@@ -31,6 +33,21 @@ img {
   height: auto;
 }
 
+.button {
+  padding: 8px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f9faf8;
+  background: #3882f6;
+  border: none;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.button--white-border {
+  border: 2px solid #f9faf8;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -39,7 +56,8 @@ img {
 }
 
 .header,
-.hero {
+.hero,
+.sign-up {
   width: 80%;
   max-width: 1000px;
 }
@@ -96,12 +114,92 @@ img {
   margin: 10px 0;
 }
 
-.hero__sign-up-button {
-  padding: 8px 24px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #f9faf8;
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+  padding: 38px 24px 100px;
+}
+
+.services__title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  text-align: center;
+}
+
+.services__examples {
+  width: 85%;
+  max-width: 850px;
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.service {
+  width: 160px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.service__image-wrapper {
+  width: 100%;
+  height: 170px;
+}
+
+.service__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.service__description {
+  color: #1f2937;
+  text-align: center;
+}
+
+.reviews {
+  padding: 100px 24px;
+  background: #e5e7eb;
+  display: flex;
+  justify-content: center;
+}
+
+.review {
+  width: 75%;
+  max-width: 750px;
+}
+
+.review__text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.review__author {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: end;
+  margin-right: 30px;
+}
+
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  padding: 70px 24px;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #3882f6;
-  border: none;
+  padding: 40px 70px 40px 100px;
   border-radius: 8px;
 }
