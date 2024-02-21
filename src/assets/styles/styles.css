@@ -203,3 +203,25 @@ img {
   padding: 40px 70px 40px 100px;
   border-radius: 8px;
 }
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f2937;
+  padding: 0 24px;
+}
+
+.footer__credit,
+.footer__creator {
+  color: #e5e7eb;
+}
+
+.footer__copyright-sign {
+  margin: 0 5px;
+}
+
+.footer__creator {
+  text-decoration: underline;
+}
