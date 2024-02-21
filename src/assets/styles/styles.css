@@ -211,6 +211,16 @@ img {
   border-radius: 8px;
 }
 
+.sign-up__title {
+  font-size: 22px;
+  color: #f9faf8;
+}
+
+.sign-up__text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
 .footer {
   height: 100px;
   display: flex;
