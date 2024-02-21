@@ -64,10 +64,12 @@ img {
 
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
   padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .header__title-link {
@@ -96,6 +98,10 @@ img {
 .hero__content,
 .hero__image-container {
   flex: 1;
+}
+
+.hero__image-container {
+  align-self: center;
 }
 
 .hero__content {
@@ -224,4 +230,34 @@ img {
 
 .footer__creator {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header,
+  .header__navigation-list {
+    flex-direction: column;
+  }
+
+  .header {
+    align-items: stretch;
+    border-bottom: none;
+  }
+
+  .header__title,
+  .header__navigation {
+    text-align: center;
+  }
+
+  .header__navigation-item {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-left: -12%;
+    margin-right: -12%;
+  }
 }
