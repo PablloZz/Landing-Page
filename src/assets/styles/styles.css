@@ -57,7 +57,8 @@ img {
 
 .header,
 .hero,
-.sign-up {
+.sign-up,
+.footer__credits {
   width: 80%;
   max-width: 1000px;
 }
@@ -222,16 +223,28 @@ img {
 }
 
 .footer {
-  height: 100px;
+  min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #1f2937;
-  padding: 0 24px;
+  padding: 12px 24px;
+}
+
+.footer__credits {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .footer__credit,
 .footer__creator {
+  text-align: center;
+}
+
+.footer__credit,
+.footer__creator,
+.footer__creator-link {
   color: #e5e7eb;
 }
 
@@ -239,7 +252,7 @@ img {
   margin: 0 5px;
 }
 
-.footer__creator {
+.footer__creator-link {
   text-decoration: underline;
 }
 
@@ -278,6 +291,13 @@ img {
 
   .sign-up__description {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__credits {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
